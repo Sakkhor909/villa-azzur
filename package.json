@@ -1,5 +1,5 @@
 {
-  "name": "blogism",
+  "name": "villa-azzur",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,8 @@
   "dependencies": {
     "next": "12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "eslint": "8.6.0",
