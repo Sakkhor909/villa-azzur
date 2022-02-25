@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +14,7 @@ $textGray: #777;
 @import "./navbar.scss";
 @import "./about.scss";
 @import "./Special.scss";
+@import "./menu.scss";
 
 .heading {
   width: 100%;
@@ -18,12 +22,14 @@ $textGray: #777;
   padding: 2rem;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
+  color: #222222;
 }
 .line {
   width: 3%;
   height: 3px;
   margin: 0 auto;
   background-color: $primaryColor;
+  margin-bottom: 1rem;
 }
 
 .footer {

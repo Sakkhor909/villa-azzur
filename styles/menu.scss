@@ -1,0 +1,80 @@
+.menu-section {
+  padding: 20px 6%;
+  .menu-tab-section {
+    margin-top: 2rem;
+    .mantine-1tggmaq {
+      justify-content: center;
+    }
+    .mantine-pjalbf {
+      background-color: $primaryColor;
+      padding: 1.5rem;
+      margin-right: 5px;
+    }
+    .mantine-v2jfw4.mantine-ref_tabActive_1 {
+      padding: 1.5rem;
+      margin-right: 5px;
+    }
+    .mantine-1ccrmb7 {
+      padding: 60px;
+      border: 1px solid #efefef;
+      background: #fff;
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    column-gap: 50px;
+    margin: 2rem 0;
+  }
+  .grid-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #e5e5e5;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    .first-column {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      .image-container {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .food-info {
+        .food-name {
+          margin-bottom: 10px;
+          font-family: "Playfair Display", serif;
+        }
+        .food-description {
+          font-family: "Rubik", sans-serif;
+          color: $textGray;
+          font-weight: lighter;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .second-column {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      .food-price {
+        color: $primaryColor;
+      }
+      .cart-btn {
+        padding: 8px;
+        background-color: $primaryColor;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+}
