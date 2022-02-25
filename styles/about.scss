@@ -1,22 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
-.about-heading {
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-}
-.line {
-  width: 3%;
-  height: 3px;
-  margin: 0 auto;
-  background-color: $primaryColor;
-}
+.about-section {
+  padding: 0 6%;
 
-.about-slogan {
-  width: 100%;
-  padding: 2rem;
-  color: $textGray;
-  text-align: center;
+  .about-heading {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+  }
+  .line {
+    width: 3%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $primaryColor;
+  }
+
+  .about-slogan {
+    width: 100%;
+    padding: 2rem;
+    color: $textGray;
+    text-align: center;
+  }
+
+  .middle-section {
+    width: 100%;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+
+    .images-section {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      flex-direction: row-reverse;
+      justify-content: center;
+      .about-image-1 {
+        position: relative;
+        width: 250px;
+        height: 350px;
+      }
+      .about-image-2 {
+        position: relative;
+        width: 250px;
+        height: 300px;
+      }
+    }
+    .text-section {
+      width: 50%;
+      .heading {
+        padding: 10px 10px 10px 0;
+        font-size: 2rem;
+        font-family: "Playfair Display", serif;
+        font-weight: normal;
+      }
+      .about-paragraph {
+        color: $textGray;
+        line-height: 1.3rem;
+      }
+    }
+  }
+  .last-section {
+    width: 100%;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    .images-section {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      justify-content: center;
+      .about-image-3 {
+        position: relative;
+        width: 250px;
+        height: 300px;
+      }
+      .about-image-4 {
+        position: relative;
+        width: 250px;
+        height: 350px;
+      }
+    }
+    .text-section {
+      width: 50%;
+      .heading {
+        padding: 10px 10px 10px 0;
+        font-size: 2rem;
+        font-family: "Playfair Display", serif;
+        font-weight: normal;
+      }
+      .paragraph-1 {
+        color: $textGray;
+        line-height: 1.3rem;
+        padding: 1rem 0;
+      }
+      .paragraph-2 {
+        line-height: 1.3rem;
+        padding: 1rem 0;
+        font-weight: lighter;
+        color: #5e5d5d;
+      }
+      .time-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        .week {
+          color: $primaryColor;
+        }
+        .time {
+          font-size: 0.8rem;
+          color: $textGray;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
 }
