@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay, EffectFade } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import "swiper/css/effect-fade";
 function Slider() {
   return (
     <>
@@ -12,8 +12,10 @@ function Slider() {
           delay: 3000,
           disableOnInteraction: false
         }}
+        allowTouchMove={false}
         pagination={{ clickable: true }}
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay, EffectFade]}
+        effect="fade"
       >
         <SwiperSlide className="slideText image1">
           <div className="text-1">Enjoy Our Food</div>

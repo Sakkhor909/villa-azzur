@@ -16,10 +16,8 @@
   "devDependencies": {
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.8",
-    "next-themes": "^0.0.15",
     "react-icons": "^4.3.1",
     "sass": "^1.48.0",
-    "styled-jsx": "^4.0.1",
     "swiper": "^8.0.6"
   }
 }
