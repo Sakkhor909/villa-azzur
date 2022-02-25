@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+$primaryColor: #f4b350;
+$textGray: #777;
+
 @import "./swiper.scss";
 @import "./navbar.scss";
+@import "./about.scss";
 
 .footer {
   color: #ada6b3;

@@ -28,14 +28,14 @@ nav {
         color: #777;
 
         &:hover {
-          color: #f4b350;
-          border-top: 4px solid #f4b350;
+          color: $primaryColor;
+          border-top: 4px solid $primaryColor;
         }
       }
     }
     .active {
-      color: #f4b350;
-      border-top: 4px solid #f4b350;
+      color: $primaryColor;
+      border-top: 4px solid $primaryColor;
     }
   }
 }

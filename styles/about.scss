@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.about-heading {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.line {
+  width: 3%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: $primaryColor;
+}
+
+.about-slogan {
+  width: 100%;
+  padding: 2rem;
+  color: $textGray;
+  text-align: center;
+}
