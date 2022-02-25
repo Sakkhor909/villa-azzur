@@ -3,7 +3,7 @@ import Image from "next/image";
 function About() {
   return (
     <div className="about-section">
-      <h2 className="about-heading">Discover Our Story</h2>
+      <h2 className="heading">Discover Our Story</h2>
       <div className="line"></div>
       <p className="about-slogan">
         VILLA AZZUR EXUDES AN ATMOSPHERE REMINISCENT OF SOUTH OF FRANCE MEETS
@@ -19,7 +19,7 @@ function About() {
           </div>
         </div>
         <div className="text-section">
-          <h2 className="heading">Our History</h2>
+          <h2 className="p-heading">Our History</h2>
           <p className="about-paragraph">
             VILLA AZZUR EXUDES AN ATMOSPHERE REMINISCENT OF SOUTH OF FRANCE
             MEETS PARISIAN GLAMOUR LOCATED AT BANANI. PERFECT FOR ANY SPECIAL
@@ -38,7 +38,7 @@ function About() {
       </div>
       <div className="last-section">
         <div className="text-section">
-          <h2 className="heading">Our Restaurant</h2>
+          <h2 className="p-heading">Our Restaurant</h2>
           <p className="paragraph-1">
             PERFECT FOR ANY SPECIAL OCCASION, PRIVATE AND GROUP DINING, OR
             ROMANTIC DINNER, VILLA AZUR IS A TOUCH OF CLASS INFUSED WITH

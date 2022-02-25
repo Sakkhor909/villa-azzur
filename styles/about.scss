@@ -2,26 +2,17 @@
 
 .about-section {
   padding: 0 6%;
-
-  .about-heading {
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
-    font-family: "Playfair Display", serif;
-    font-size: 2rem;
-  }
-  .line {
-    width: 3%;
-    height: 3px;
-    margin: 0 auto;
-    background-color: $primaryColor;
-  }
-
   .about-slogan {
     width: 100%;
     padding: 2rem;
     color: $textGray;
     text-align: center;
+  }
+  .p-heading {
+    padding: 10px 10px 10px 0;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
   }
 
   .middle-section {
@@ -50,12 +41,6 @@
     }
     .text-section {
       width: 50%;
-      .heading {
-        padding: 10px 10px 10px 0;
-        font-size: 2rem;
-        font-family: "Playfair Display", serif;
-        font-weight: normal;
-      }
       .about-paragraph {
         color: $textGray;
         line-height: 1.3rem;
@@ -86,12 +71,6 @@
     }
     .text-section {
       width: 50%;
-      .heading {
-        padding: 10px 10px 10px 0;
-        font-size: 2rem;
-        font-family: "Playfair Display", serif;
-        font-weight: normal;
-      }
       .paragraph-1 {
         color: $textGray;
         line-height: 1.3rem;

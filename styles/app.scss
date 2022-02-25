@@ -10,6 +10,21 @@ $textGray: #777;
 @import "./swiper.scss";
 @import "./navbar.scss";
 @import "./about.scss";
+@import "./Special.scss";
+
+.heading {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.line {
+  width: 3%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: $primaryColor;
+}
 
 .footer {
   color: #ada6b3;

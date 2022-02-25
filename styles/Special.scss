@@ -1,0 +1,85 @@
+.Special-section {
+  background: url("/ban1.jpg") center center;
+  background-size: cover;
+  padding: 50px 6%;
+  .s-heading {
+    color: white;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    margin: 2rem 0;
+  }
+  .grid-item {
+    display: flex;
+    min-height: 300px;
+    .image-container {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      cursor: pointer;
+      &:hover + .card-info {
+        background-color: $primaryColor;
+        .sub-heading,
+        .price {
+          color: white;
+        }
+        .cart-btn {
+          background-color: black;
+        }
+      }
+    }
+    .card-info {
+      width: 50%;
+      background-color: white;
+      padding: 1rem;
+      &:hover {
+        background-color: $primaryColor;
+        .sub-heading,
+        .price {
+          color: white;
+        }
+        .cart-btn {
+          background-color: black;
+        }
+      }
+      .c-heading {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        color: rgb(37, 37, 37);
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      .sub-heading {
+        color: $textGray;
+        padding: 20px;
+        text-align: center;
+      }
+      .price {
+        color: $primaryColor;
+        padding: 20px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .category {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      .cart-btn {
+        background-color: $primaryColor;
+        text-align: center;
+        color: white;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0.7rem;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
