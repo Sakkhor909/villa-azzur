@@ -5,7 +5,7 @@ function About() {
     <div className="about-section">
       <h2 className="heading">Discover Our Story</h2>
       <div className="line"></div>
-      <p className="about-slogan">
+      <p className="text-gray">
         VILLA AZZUR EXUDES AN ATMOSPHERE REMINISCENT OF SOUTH OF FRANCE MEETS
         PARISIAN GLAMOUR LOCATED AT BANANI
       </p>

@@ -1,0 +1,53 @@
+.Reservation-section {
+  padding: 40px 6%;
+  background: url("/table_reservation.jpg") center center;
+  background-size: cover;
+  .r-heading {
+    color: white;
+    text-align: left;
+    padding-left: 0;
+  }
+  .r-line {
+    margin: 0;
+  }
+  .reservation-slogan {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    width: 35%;
+    line-height: 1.5rem;
+    color: #afadac;
+    padding: 10px 0;
+  }
+  form {
+    width: 35%;
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        color: white;
+        padding: 20px 20px 20px 0;
+      }
+      input {
+        padding: 10px;
+        outline: none;
+        padding-left: 15px;
+        color: gray;
+      }
+    }
+    .slice-group {
+      display: flex;
+      column-gap: 20px;
+    }
+    .submit-btn {
+      border: 1px solid $primaryColor;
+      padding: 10px;
+      background-color: transparent;
+      color: $primaryColor;
+      margin: 20px 0;
+      cursor: pointer;
+      font-weight: lighter;
+    }
+  }
+}

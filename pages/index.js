@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import About from "../components/about";
 import Special from "../components/Special";
 import Menu from "../components/menu";
+import Reservation from "../components/Reservation";
 import Map from "../components/map";
 import Footer from "../components/footer";
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Special />
       <Menu />
+      <Reservation />
       <Map />
       <Footer />
     </>
