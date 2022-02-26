@@ -1,0 +1,47 @@
+.team-section {
+  padding: 20px 6%;
+  .person-card {
+    &:hover {
+      .person-name {
+        color: $primaryColor;
+      }
+      .line {
+        background-color: $primaryColor;
+      }
+    }
+    .person-img {
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+    .person-name {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px;
+      color: $textGray;
+      font-size: 1.2rem;
+      font-family: "Playfair Display", serif;
+    }
+    .designation {
+      text-align: center;
+      color: $textGray;
+      padding: 10px;
+      font-family: "Playfair Display", serif;
+    }
+    .line {
+      background-color: black;
+      width: 15%;
+    }
+    .text-gray {
+      padding: 0.5rem;
+      font-family: "Rubik", sans-serif;
+    }
+    .social-icons {
+      text-align: center;
+      svg {
+        color: $textGray;
+        margin: 10px;
+      }
+    }
+  }
+}
