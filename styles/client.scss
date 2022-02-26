@@ -1,0 +1,15 @@
+.Client-statistics-section {
+  background: url("/ban2.jpg") center center;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Playfair Display", serif;
+  .number-data {
+    color: $primaryColor;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

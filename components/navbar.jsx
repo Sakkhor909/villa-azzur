@@ -1,7 +1,11 @@
 import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsHandbagFill } from "react-icons/bs";
+import Link from "next/link";
+import { useRouter } from "next/router";
 function Navbar() {
+  const route = useRouter();
+
   return (
     <nav>
       <div className="logo">
@@ -9,33 +13,57 @@ function Navbar() {
       </div>
       <ul className="navlist">
         <li>
-          <a href="" className="active">
-            Home
-          </a>
+          <Link href="#home">
+            <a className={route.asPath == "/#home" ? "active" : null}>Home</a>
+          </Link>
         </li>
         <li>
-          <a href="">About</a>
+          <Link href="/#about" replace>
+            <a className={route.asPath == "/#about" ? "active" : null}>About</a>
+          </Link>
         </li>
         <li>
-          <a href="">Todays Special</a>
+          <Link href="/#todays-special" replace>
+            <a className={route.asPath == "/#todays-special" ? "active" : null}>
+              Todays Special
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="">Menu</a>
+          <Link href="/#menu" replace>
+            <a className={route.asPath == "/#menu" ? "active" : null}>Menu</a>
+          </Link>
         </li>
         <li>
-          <a href="">Reservation</a>
+          <Link href="#reservation" replace>
+            <a className={route.asPath == "/#reservation" ? "active" : null}>
+              Reservation
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="">Team</a>
+          <Link href="#team">
+            <a className={route.asPath == "/#team" ? "active" : null}>Team</a>
+          </Link>
         </li>
         <li>
-          <a href="">Gallery</a>
+          <Link href="#gallery">
+            <a className={route.asPath == "/#gallery" ? "active" : null}>
+              Gallery
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="">Contact</a>
+          <Link href="#contact">
+            <a className={route.asPath == "/#contact" ? "active" : null}>
+              Contact
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="">Blog</a>
+          <Link href="#blog">
+            <a className={route.asPath == "/#blog" ? "active" : null}>Blog</a>
+          </Link>
         </li>
         <li>
           <AiOutlineSearch />

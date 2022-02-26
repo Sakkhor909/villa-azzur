@@ -2,7 +2,7 @@ import { Tabs } from "@mantine/core";
 import Image from "next/image";
 function Menu() {
   return (
-    <div className="menu-section">
+    <div className="menu-section" id="menu">
       <h2 className="heading">Our Menu</h2>
       <div className="line"></div>
       <Tabs variant="outline" tabPadding="md" className="menu-tab-section">

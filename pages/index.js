@@ -5,6 +5,7 @@ import Special from "../components/Special";
 import Menu from "../components/menu";
 import Reservation from "../components/Reservation";
 import Team from "../components/team";
+import Client from "../components/client";
 import Map from "../components/map";
 import Footer from "../components/footer";
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Menu />
       <Reservation />
       <Team />
+      <Client />
       <Map />
       <Footer />
     </>

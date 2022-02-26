@@ -16,6 +16,7 @@ function Slider() {
         pagination={{ clickable: true }}
         modules={[Pagination, Autoplay, EffectFade]}
         effect="fade"
+        id="home"
       >
         <SwiperSlide className="slideText image1">
           <div className="text-1">Enjoy Our Food</div>

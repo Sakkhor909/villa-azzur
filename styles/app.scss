@@ -6,7 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 $primaryColor: #f4b350;
 $textGray: #777;
 
@@ -17,6 +19,7 @@ $textGray: #777;
 @import "./menu.scss";
 @import "./Reservation.scss";
 @import "./team.scss";
+@import "./client.scss";
 
 .heading {
   width: 100%;

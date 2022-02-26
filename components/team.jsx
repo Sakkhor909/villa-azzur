@@ -12,16 +12,16 @@ import {
 
 function Team() {
   return (
-    <div className="team-section">
+    <div className="team-section" id="team">
       <div className="heading">Meet Our Team</div>
       <div className="line"></div>
       <p className="text-gray">Sed arcu. Cras consequat.</p>
       <Swiper
         className="mySwiper"
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false
+        }}
         pagination={{ clickable: true }}
         modules={[Pagination, Autoplay]}
         slidesPerView={4}

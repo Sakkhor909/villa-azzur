@@ -2,7 +2,7 @@ import React from "react";
 
 function Reservation() {
   return (
-    <div className="Reservation-section">
+    <div className="Reservation-section" id="reservation">
       <div className="heading r-heading">Make Reservation</div>
       <div className="line r-line"></div>
       <p className="reservation-slogan">

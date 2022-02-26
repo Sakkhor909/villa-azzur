@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Special() {
   return (
-    <div className="Special-section">
+    <div className="Special-section" id="todays-special">
       <div className="heading s-heading">Today&apos;s Special</div>
       <div className="line"></div>
       <div className="grid-container">
