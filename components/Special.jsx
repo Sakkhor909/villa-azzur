@@ -1,8 +1,24 @@
 import Image from "next/image";
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 
 function Special() {
+  const SpecialRef = useRef();
+  const isVisible = useElementView(SpecialRef);
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile
+  ] = useContext(NavContext);
+  useEffect(() => {
+    setSpecialVisibile(isVisible);
+  }, [setSpecialVisibile, isVisible]);
   return (
-    <div className="Special-section" id="todays-special">
+    <div className="Special-section" id="todays-special" ref={SpecialRef}>
       <div className="heading s-heading">Today&apos;s Special</div>
       <div className="line"></div>
       <div className="grid-container">

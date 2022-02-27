@@ -1,8 +1,26 @@
 import { Tabs } from "@mantine/core";
 import Image from "next/image";
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 function Menu() {
+  const MenuRef = useRef();
+  const isVisible = useElementView(MenuRef);
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile,
+    MenuVisibile,
+    setMenuVisibile
+  ] = useContext(NavContext);
+  useEffect(() => {
+    setMenuVisibile(isVisible);
+  }, [setMenuVisibile, isVisible]);
   return (
-    <div className="menu-section" id="menu">
+    <div className="menu-section" id="menu" ref={MenuRef}>
       <h2 className="heading">Our Menu</h2>
       <div className="line"></div>
       <Tabs variant="outline" tabPadding="md" className="menu-tab-section">

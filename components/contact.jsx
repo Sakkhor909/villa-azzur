@@ -6,10 +6,37 @@ import {
   FaPinterest
 } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
-
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 function Contact() {
+  const ContactRef = useRef();
+  const isVisible = useElementView(ContactRef);
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile,
+    MenuVisibile,
+    setMenuVisibile,
+    ReservationVisibile,
+    setReservationVisibile,
+    TeamVisibile,
+    setTeamVisibile,
+    GalleryVisibile,
+    setGalleryVisibile,
+    BlogVisibile,
+    setBlogVisibile,
+    ContactVisibile,
+    setContactVisibile
+  ] = useContext(NavContext);
+  useEffect(() => {
+    setContactVisibile(isVisible);
+  }, [setContactVisibile, isVisible]);
   return (
-    <div className="cotact-section">
+    <div className="cotact-section" ref={ContactRef}>
       <h2 className="heading">Get in Touch</h2>
       <div className="line"></div>
       <p className="text-gray">Contact us for any queries.</p>

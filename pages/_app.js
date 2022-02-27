@@ -1,5 +1,6 @@
 import "../styles/app.scss";
 import Head from "next/head";
+import { NavContextProvider } from "../contexts/navContext";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -7,7 +8,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Villa Azzur</title>
       </Head>
-      <Component {...pageProps} />
+      <NavContextProvider>
+        <Component {...pageProps} />
+      </NavContextProvider>
     </>
   );
 }

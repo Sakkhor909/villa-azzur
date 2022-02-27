@@ -1,7 +1,17 @@
 import Image from "next/image";
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 function About() {
+  const AboutRef = useRef();
+  const isVisible = useElementView(AboutRef);
+  const [HomeVisibile, setHomeVisibile, AboutVisibile, setAboutVisibile] =
+    useContext(NavContext);
+  useEffect(() => {
+    setAboutVisibile(isVisible);
+  }, [setAboutVisibile, isVisible]);
   return (
-    <div className="about-section" id="about">
+    <div className="about-section" id="about" ref={AboutRef}>
       <h2 className="heading">Discover Our Story</h2>
       <div className="line"></div>
       <p className="text-gray">

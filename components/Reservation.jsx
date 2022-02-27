@@ -1,8 +1,27 @@
-import React from "react";
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 
 function Reservation() {
+  const ReservationRef = useRef();
+  const isVisible = useElementView(ReservationRef);
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile,
+    MenuVisibile,
+    setMenuVisibile,
+    ReservationVisibile,
+    setReservationVisibile
+  ] = useContext(NavContext);
+  useEffect(() => {
+    setReservationVisibile(isVisible);
+  }, [setReservationVisibile, isVisible]);
   return (
-    <div className="Reservation-section" id="reservation">
+    <div className="Reservation-section" id="reservation" ref={ReservationRef}>
       <div className="heading r-heading">Make Reservation</div>
       <div className="line r-line"></div>
       <p className="reservation-slogan">

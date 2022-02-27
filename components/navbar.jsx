@@ -2,9 +2,30 @@ import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsHandbagFill } from "react-icons/bs";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useContext } from "react";
+import { NavContext } from "../contexts/navContext";
+
 function Navbar() {
-  const route = useRouter();
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile,
+    MenuVisibile,
+    setMenuVisibile,
+    ReservationVisibile,
+    setReservationVisibile,
+    TeamVisibile,
+    setTeamVisibile,
+    GalleryVisibile,
+    setGalleryVisibile,
+    BlogVisibile,
+    setBlogVisibile,
+    ContactVisibile,
+    setContactVisibile
+  ] = useContext(NavContext);
 
   return (
     <nav>
@@ -14,55 +35,48 @@ function Navbar() {
       <ul className="navlist">
         <li>
           <Link href="#home">
-            <a className={route.asPath == "/#home" ? "active" : null}>Home</a>
+            <a className={HomeVisibile ? "active" : null}>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/#about" replace>
-            <a className={route.asPath == "/#about" ? "active" : null}>About</a>
+            <a className={AboutVisibile ? "active" : null}>About</a>
           </Link>
         </li>
         <li>
           <Link href="/#todays-special" replace>
-            <a className={route.asPath == "/#todays-special" ? "active" : null}>
-              Todays Special
-            </a>
+            <a className={SpecialVisibile ? "active" : null}>Todays Special</a>
           </Link>
         </li>
         <li>
           <Link href="/#menu" replace>
-            <a className={route.asPath == "/#menu" ? "active" : null}>Menu</a>
+            <a className={MenuVisibile ? "active" : null}>Menu</a>
           </Link>
         </li>
         <li>
           <Link href="#reservation" replace>
-            <a className={route.asPath == "/#reservation" ? "active" : null}>
-              Reservation
-            </a>
+            <a className={ReservationVisibile ? "active" : null}>Reservation</a>
           </Link>
         </li>
         <li>
           <Link href="#team">
-            <a className={route.asPath == "/#team" ? "active" : null}>Team</a>
+            <a className={TeamVisibile ? "active" : null}>Team</a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="#blog">
+            <a className={BlogVisibile ? "active" : null}>Blog</a>
           </Link>
         </li>
         <li>
           <Link href="#gallery">
-            <a className={route.asPath == "/#gallery" ? "active" : null}>
-              Gallery
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="#blog">
-            <a className={route.asPath == "/#blog" ? "active" : null}>Blog</a>
+            <a className={GalleryVisibile ? "active" : null}>Gallery</a>
           </Link>
         </li>
         <li>
           <Link href="#contact">
-            <a className={route.asPath == "/#contact" ? "active" : null}>
-              Contact
-            </a>
+            <a className={ContactVisibile ? "active" : null}>Contact</a>
           </Link>
         </li>
         <li>

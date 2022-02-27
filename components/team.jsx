@@ -9,10 +9,32 @@ import {
   FaGooglePlusG,
   FaInstagram
 } from "react-icons/fa";
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 
 function Team() {
+  const TeamRef = useRef();
+  const isVisible = useElementView(TeamRef);
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile,
+    MenuVisibile,
+    setMenuVisibile,
+    ReservationVisibile,
+    setReservationVisibile,
+    TeamVisibile,
+    setTeamVisibile
+  ] = useContext(NavContext);
+  useEffect(() => {
+    setTeamVisibile(isVisible);
+  }, [setTeamVisibile, isVisible]);
   return (
-    <div className="team-section" id="team">
+    <div className="team-section" id="team" ref={TeamRef}>
       <div className="heading">Meet Our Team</div>
       <div className="line"></div>
       <p className="text-gray">Sed arcu. Cras consequat.</p>

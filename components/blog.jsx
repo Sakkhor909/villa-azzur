@@ -1,9 +1,34 @@
 import { SimpleGrid } from "@mantine/core";
 import Image from "next/image";
-
+import { useRef, useEffect, useContext } from "react";
+import useElementView from "../hooks/useElementView";
+import { NavContext } from "../contexts/navContext";
 function Blog() {
+  const BlogRef = useRef();
+  const isVisible = useElementView(BlogRef);
+  const [
+    HomeVisibile,
+    setHomeVisibile,
+    AboutVisibile,
+    setAboutVisibile,
+    SpecialVisibile,
+    setSpecialVisibile,
+    MenuVisibile,
+    setMenuVisibile,
+    ReservationVisibile,
+    setReservationVisibile,
+    TeamVisibile,
+    setTeamVisibile,
+    GalleryVisibile,
+    setGalleryVisibile,
+    BlogVisibile,
+    setBlogVisibile
+  ] = useContext(NavContext);
+  useEffect(() => {
+    setBlogVisibile(isVisible);
+  }, [setBlogVisibile, isVisible]);
   return (
-    <div className="blog-section">
+    <div className="blog-section" ref={BlogRef}>
       <div className="heading">Blogs</div>
       <div className="line"></div>
       <SimpleGrid cols={4} spacing="lg">
