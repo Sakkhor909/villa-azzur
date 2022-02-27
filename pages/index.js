@@ -6,6 +6,7 @@ import Menu from "../components/menu";
 import Reservation from "../components/Reservation";
 import Team from "../components/team";
 import Client from "../components/client";
+import Gallery from "../components/gallery";
 import Map from "../components/map";
 import Footer from "../components/footer";
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Reservation />
       <Team />
       <Client />
+      <Gallery />
       <Map />
       <Footer />
     </>
