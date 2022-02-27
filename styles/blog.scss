@@ -1,0 +1,83 @@
+.blog-section {
+  margin: 40px;
+  .container {
+    background-color: rgb(108 137 198 / 15%);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    &:hover {
+      transform: translateY(-20px);
+      box-shadow: 0px 0px 10px 0px grey;
+      background-color: white;
+      .image-container {
+        .tag {
+          background-color: #f0f3f9;
+          color: #4a5b76;
+        }
+      }
+    }
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      .date {
+        position: absolute;
+        color: white;
+        top: -10px;
+        right: -10px;
+        z-index: 2;
+        background-color: #4a5b76;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      img {
+        border-radius: 15px;
+      }
+      .tag {
+        color: white;
+        position: absolute;
+        bottom: -10px;
+        right: 20px;
+        z-index: 2;
+        background-color: #4a5b76;
+        padding: 5px 20px;
+        border-radius: 5px;
+      }
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      padding: 10px;
+    }
+    .description {
+      color: $textGray;
+      padding: 10px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: 14px;
+      color: gray;
+      .category {
+        font-style: italic;
+      }
+    }
+  }
+  .view-more-btn {
+    border: 2px solid $primaryColor;
+    background-color: white;
+    color: $primaryColor;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background-color: $primaryColor;
+      color: white;
+    }
+  }
+}

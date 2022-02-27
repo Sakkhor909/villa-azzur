@@ -21,7 +21,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest2.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -30,7 +30,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest3.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -39,7 +39,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest4.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -48,7 +48,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest5.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -57,7 +57,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest6.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -66,7 +66,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest7.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -75,7 +75,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/food1.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -97,7 +97,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest2.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -106,7 +106,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest3.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -115,7 +115,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest4.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -124,7 +124,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest5.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -133,7 +133,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest6.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -142,16 +142,7 @@ function Gallery() {
               </div>
             </div>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/rest7.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>
@@ -164,70 +155,7 @@ function Gallery() {
         <Tabs.Tab label="Food">
           <SimpleGrid cols={4}>
             <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
-              <div className="hover-effect">
-                <div className="inner-gal">
-                  <div className="location">Location 1</div>
-                  <div className="details">Resturant</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-container">
-              <Image src="/rest1.jpg" alt="Resturant 1" layout="fill" />
+              <Image src="/food1.jpg" alt="Resturant 1" layout="fill" />
               <div className="hover-effect">
                 <div className="inner-gal">
                   <div className="location">Location 1</div>

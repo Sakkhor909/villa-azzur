@@ -54,15 +54,15 @@ function Navbar() {
           </Link>
         </li>
         <li>
+          <Link href="#blog">
+            <a className={route.asPath == "/#blog" ? "active" : null}>Blog</a>
+          </Link>
+        </li>
+        <li>
           <Link href="#contact">
             <a className={route.asPath == "/#contact" ? "active" : null}>
               Contact
             </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="#blog">
-            <a className={route.asPath == "/#blog" ? "active" : null}>Blog</a>
           </Link>
         </li>
         <li>
