@@ -1,0 +1,91 @@
+.cotact-section {
+  background: url("/ban3.jpg") center center;
+  background-size: cover;
+  color: white;
+  padding: 50px 0;
+  .heading {
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .text-gray {
+    color: #ccc;
+  }
+  .contact-columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    column-gap: 20px;
+    .title {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+    }
+    .text-gray {
+      width: 300px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+    .phone-number {
+      color: $primaryColor;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $textGray;
+        padding: 10px;
+        border: 1px solid $textGray;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: $primaryColor;
+          color: white;
+        }
+      }
+    }
+  }
+  .open-hourse-section {
+    .week {
+      color: $primaryColor;
+      padding: 15px;
+    }
+  }
+  .contact-form-section {
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      row-gap: 20px;
+      input {
+        padding: 10px;
+        background-color: white;
+        outline: none;
+        border: none;
+        width: 100%;
+      }
+      .text-msg {
+        padding: 10px;
+        border: none;
+        outline: none;
+      }
+      .Send-btn {
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 1px solid gray;
+        color: gray;
+        cursor: pointer;
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+}
