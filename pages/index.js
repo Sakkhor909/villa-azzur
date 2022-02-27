@@ -11,6 +11,9 @@ import Blog from "../components/blog";
 import Contact from "../components/contact";
 import Map from "../components/map";
 import Footer from "../components/footer";
+
+// Need to do startup animation
+
 export default function Home() {
   return (
     <>
