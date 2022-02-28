@@ -12,6 +12,7 @@ html {
 $primaryColor: #f4b350;
 $textGray: #777;
 
+@import "./animation.scss";
 @import "./swiper.scss";
 @import "./navbar.scss";
 @import "./about.scss";
