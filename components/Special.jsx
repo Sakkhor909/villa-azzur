@@ -1,11 +1,20 @@
 import Image from "next/image";
 import { useRef, useEffect, useContext } from "react";
-import useElementView from "../hooks/useElementView";
 import { NavContext } from "../contexts/navContext";
+import { CSSTransition } from "react-transition-group";
+import { useInViewport } from "react-in-viewport";
 
 function Special() {
   const SpecialRef = useRef();
-  const isVisible = useElementView(SpecialRef);
+  const TitleSectionRef = useRef();
+  // defining inViewport
+  const { inViewport } = useInViewport(SpecialRef, {
+    threshold: 0.3
+  });
+  const {
+    inViewport: titleSectionInViewport,
+    enterCount: titleSectionInViewportCount
+  } = useInViewport(TitleSectionRef);
   const [
     HomeVisibile,
     setHomeVisibile,
@@ -15,12 +24,20 @@ function Special() {
     setSpecialVisibile
   ] = useContext(NavContext);
   useEffect(() => {
-    setSpecialVisibile(isVisible);
-  }, [setSpecialVisibile, isVisible]);
+    setSpecialVisibile(inViewport);
+  }, [setSpecialVisibile, inViewport]);
   return (
     <div className="Special-section" id="todays-special" ref={SpecialRef}>
-      <div className="heading s-heading">Today&apos;s Special</div>
-      <div className="line"></div>
+      <CSSTransition
+        in={titleSectionInViewport && titleSectionInViewportCount === 1}
+        timeout={1500}
+        classNames="silde-down"
+      >
+        <div className="title-section" ref={TitleSectionRef}>
+          <div className="heading s-heading">Today&apos;s Special</div>
+          <div className="line"></div>
+        </div>
+      </CSSTransition>
       <div className="grid-container">
         {foods.map((food, index) => {
           return (
