@@ -29,3 +29,26 @@
   transform: translateX(0px);
   transition: all 1.5s ease-in;
 }
+
+.slide-up-enter {
+  opacity: 0;
+  transform: translateY(400px);
+}
+
+.slide-up-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1.5s ease-in;
+}
+
+.scale-up-enter {
+  img {
+    transform: scale(0.3);
+  }
+}
+.scale-up-enter-active {
+  img {
+    transform: scale(1);
+    transition: all 1.5s ease-in;
+  }
+}

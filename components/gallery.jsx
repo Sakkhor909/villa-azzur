@@ -2,11 +2,16 @@ import { Tabs } from "@mantine/core";
 import { SimpleGrid } from "@mantine/core";
 import Image from "next/image";
 import { useRef, useEffect, useContext } from "react";
-import useElementView from "../hooks/useElementView";
 import { NavContext } from "../contexts/navContext";
+
+import { useInViewport } from "react-in-viewport";
+
 function Gallery() {
   const GalleryRef = useRef();
-  const isVisible = useElementView(GalleryRef);
+  // defining inViewport
+  const { inViewport } = useInViewport(GalleryRef, {
+    threshold: 0.3
+  });
   const [
     HomeVisibile,
     setHomeVisibile,
@@ -24,8 +29,8 @@ function Gallery() {
     setGalleryVisibile
   ] = useContext(NavContext);
   useEffect(() => {
-    setGalleryVisibile(isVisible);
-  }, [setGalleryVisibile, isVisible]);
+    setGalleryVisibile(inViewport);
+  }, [setGalleryVisibile, inViewport]);
   return (
     <div className="gallery-section" ref={GalleryRef}>
       <div>
