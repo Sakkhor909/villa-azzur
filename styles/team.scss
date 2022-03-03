@@ -45,3 +45,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .team-swiper {
+    height: fit-content;
+  }
+  .person-card {
+    margin-bottom: 30px;
+  }
+}

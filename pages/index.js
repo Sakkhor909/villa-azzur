@@ -11,13 +11,15 @@ import Blog from "../components/blog";
 import Contact from "../components/contact";
 import Map from "../components/map";
 import Footer from "../components/footer";
+import { useState } from "react";
 
 export default function Home() {
+  const [MenuClick, setMenuClick] = useState(false);
   return (
     <>
       <Slider />
-      <Navbar />
-      <About />
+      <Navbar MenuClick={MenuClick} setMenuClick={setMenuClick} />
+      <About MenuClick={MenuClick} />
       <Special />
       <Menu />
       <Reservation />

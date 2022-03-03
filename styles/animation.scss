@@ -40,15 +40,3 @@
   transform: translateY(0px);
   transition: all 1.5s ease-in;
 }
-
-.scale-up-enter {
-  img {
-    transform: scale(0.3);
-  }
-}
-.scale-up-enter-active {
-  img {
-    transform: scale(1);
-    transition: all 1.5s ease-in;
-  }
-}

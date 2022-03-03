@@ -2,6 +2,9 @@
   padding: 60px 6%;
   background: url("/table_reservation.jpg") center center;
   background-size: cover;
+  @media only screen and (max-width: 768px) {
+    background-position: left center;
+  }
   .r-heading {
     color: white;
     text-align: left;
@@ -18,10 +21,15 @@
     line-height: 1.5rem;
     color: #afadac;
     padding: 10px 0;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
   form {
     width: 35%;
-
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
     .input-group {
       display: flex;
       flex-direction: column;
@@ -39,6 +47,9 @@
     .slice-group {
       display: flex;
       column-gap: 20px;
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
     }
     .submit-btn {
       border: 1px solid $primaryColor;

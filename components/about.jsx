@@ -4,7 +4,7 @@ import { NavContext } from "../contexts/navContext";
 import { CSSTransition } from "react-transition-group";
 import { useInViewport } from "react-in-viewport";
 
-function About() {
+function About({ MenuClick }) {
   // Defining ref
   const AboutRef = useRef();
   const imagesSectionRef = useRef();
@@ -42,7 +42,11 @@ function About() {
     setAboutVisibile(inViewport);
   }, [setAboutVisibile, inViewport]);
   return (
-    <div className="about-section" id="about" ref={AboutRef}>
+    <div
+      className={`about-section ${MenuClick ? "mt" : null}`}
+      id="about"
+      ref={AboutRef}
+    >
       <CSSTransition
         in={titleSectionInViewport && titleSectionInViewportCount === 1}
         timeout={1500}

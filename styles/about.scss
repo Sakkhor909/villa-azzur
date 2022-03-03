@@ -1,6 +1,9 @@
 .about-section {
   padding: 0 6%;
   overflow: hidden;
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+  }
   .p-heading {
     padding: 10px 10px 10px 0;
     font-size: 2rem;
@@ -13,6 +16,9 @@
     min-height: 25rem;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .images-section {
       width: 50%;
@@ -21,6 +27,9 @@
       column-gap: 10px;
       flex-direction: row-reverse;
       justify-content: center;
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
       .about-image-1 {
         position: relative;
         width: 250px;
@@ -34,6 +43,9 @@
     }
     .text-section {
       width: 50%;
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
       .about-paragraph {
         color: $textGray;
         line-height: 1.3rem;
@@ -45,12 +57,18 @@
     min-height: 25rem;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     .images-section {
       width: 50%;
       display: flex;
       align-items: center;
       column-gap: 10px;
       justify-content: center;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
       .about-image-3 {
         position: relative;
         width: 250px;
@@ -64,6 +82,9 @@
     }
     .text-section {
       width: 50%;
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
       .paragraph-1 {
         color: $textGray;
         line-height: 1.3rem;
@@ -89,5 +110,12 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mt {
+    margin-top: 70%;
+    transition: all 1s ease-in-out;
   }
 }

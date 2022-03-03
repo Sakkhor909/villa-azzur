@@ -53,14 +53,15 @@ function Team() {
         classNames="slide-up"
       >
         <Swiper
-          className="mySwiper"
+          className="team-swiper"
           autoplay={{
             delay: 3000,
             disableOnInteraction: false
           }}
+          slidesPerView={1}
+          breakpoints={{ 768: { slidesPerView: 4 } }}
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
-          slidesPerView={4}
           ref={peopleSectionRef}
         >
           <SwiperSlide>

@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-around;
   font-family: "Playfair Display", serif;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 15px 0;
+  }
   .number-data {
     color: $primaryColor;
     font-size: 2rem;

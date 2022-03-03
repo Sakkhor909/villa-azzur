@@ -31,15 +31,6 @@
   }
 }
 
-.swiper-slide-active {
-  .text-1 {
-    animation: slideDown 1s ease-in;
-  }
-  .text-2 {
-    animation: slideUp 1s ease-in;
-  }
-}
-
 .image1 {
   background-image: url("/food1.jpg");
 }
@@ -50,26 +41,4 @@
 
 .image3 {
   background-image: url("/food6.jpg");
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(400px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-400px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }

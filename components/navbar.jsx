@@ -2,10 +2,11 @@ import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsHandbagFill } from "react-icons/bs";
 import Link from "next/link";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NavContext } from "../contexts/navContext";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-function Navbar() {
+function Navbar({ MenuClick, setMenuClick }) {
   const [
     HomeVisibile,
     setHomeVisibile,
@@ -32,7 +33,13 @@ function Navbar() {
       <div className="logo">
         <Image src="/villa_azzur_logo.png" alt="Logo" layout="fill" />
       </div>
-      <ul className="navlist">
+      <button
+        className="mobile-menu-btn"
+        onClick={() => setMenuClick((prevValue) => !prevValue)}
+      >
+        <GiHamburgerMenu />
+      </button>
+      <ul className={`navlist ${MenuClick ? "mobile-hide" : ""}`}>
         <li>
           <Link href="#home">
             <a className={HomeVisibile ? "active" : null}>Home</a>

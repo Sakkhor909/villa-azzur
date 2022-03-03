@@ -56,3 +56,9 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .mantine-pmb3yg {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

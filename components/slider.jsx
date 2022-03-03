@@ -16,7 +16,6 @@ function Slider() {
   return (
     <>
       <Swiper
-        className="mySwiper"
         autoplay={{
           delay: 3000,
           disableOnInteraction: false
