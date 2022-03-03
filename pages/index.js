@@ -13,8 +13,20 @@ import Map from "../components/map";
 import Footer from "../components/footer";
 import { useState } from "react";
 
-export default function Home() {
+export async function getStaticProps(context) {
+  let BlogsData = await fetch(
+    "https://public-api.wordpress.com/rest/v1.1/sites/villaazzur.wordpress.com/posts/"
+  ).then((res) => res.json());
+  const blogPosts = BlogsData.posts;
+  return {
+    props: { blogPosts },
+    revalidate: 1
+  };
+}
+
+export default function Home({ blogPosts }) {
   const [MenuClick, setMenuClick] = useState(false);
+  console.log(blogPosts);
   return (
     <>
       <Slider />
@@ -25,7 +37,7 @@ export default function Home() {
       <Reservation />
       <Team />
       <Client />
-      <Blog />
+      <Blog blogPosts={blogPosts} />
       <Gallery />
       <Contact />
       <Map />

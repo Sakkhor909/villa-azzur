@@ -4,7 +4,7 @@ import { useRef, useEffect, useContext } from "react";
 import { NavContext } from "../contexts/navContext";
 import { CSSTransition } from "react-transition-group";
 import { useInViewport } from "react-in-viewport";
-function Blog() {
+function Blog({ blogPosts }) {
   const BlogRef = useRef();
   const blogSectionRef = useRef();
   // defining inViewport
@@ -46,70 +46,29 @@ function Blog() {
         classNames="slide-up"
       >
         <SimpleGrid cols={4} spacing="lg" ref={blogSectionRef}>
-          <a className="container">
-            <div className="image-container">
-              <div className="date">12 jun</div>
-              <Image src="/food1.jpg" alt="Blog image" layout="fill" />
-              <div className="tag">My Food</div>
-            </div>
-            <h5 className="title">Food recipe</h5>
-            <div className="description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              nihil reiciendis neque optio dolores, sunt soluta.
-            </div>
-            <div className="card-footer">
-              <div className="category">Food</div>
-              <div className="time">2 minutes</div>
-            </div>
-          </a>
-          <a className="container">
-            <div className="image-container">
-              <div className="date">12 jun</div>
-              <Image src="/food1.jpg" alt="Blog image" layout="fill" />
-              <div className="tag">My Food</div>
-            </div>
-            <h5 className="title">Food recipe</h5>
-            <div className="description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              nihil reiciendis neque optio dolores, sunt soluta.
-            </div>
-            <div className="card-footer">
-              <div className="category">Food</div>
-              <div className="time">2 minutes</div>
-            </div>
-          </a>
-          <a className="container">
-            <div className="image-container">
-              <div className="date">12 jun</div>
-              <Image src="/food1.jpg" alt="Blog image" layout="fill" />
-              <div className="tag">My Food</div>
-            </div>
-            <h5 className="title">Food recipe</h5>
-            <div className="description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              nihil reiciendis neque optio dolores, sunt soluta.
-            </div>
-            <div className="card-footer">
-              <div className="category">Food</div>
-              <div className="time">2 minutes</div>
-            </div>
-          </a>
-          <a className="container">
-            <div className="image-container">
-              <div className="date">12 jun</div>
-              <Image src="/food1.jpg" alt="Blog image" layout="fill" />
-              <div className="tag">My Food</div>
-            </div>
-            <h5 className="title">Food recipe</h5>
-            <div className="description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              nihil reiciendis neque optio dolores, sunt soluta.
-            </div>
-            <div className="card-footer">
-              <div className="category">Food</div>
-              <div className="time">2 minutes</div>
-            </div>
-          </a>
+          {blogPosts.map((post) => {
+            function createMarkup() {
+              return { __html: post.content };
+            }
+            return (
+              <a className="container" key={post.ID}>
+                <div className="image-container">
+                  <div className="date">12 jun</div>
+                  <Image src="/food1.jpg" alt="Blog image" layout="fill" />
+                  <div className="tag">My Food</div>
+                </div>
+                <h5 className="title">{post.title}</h5>
+                <div
+                  className="description"
+                  dangerouslySetInnerHTML={createMarkup()}
+                ></div>
+                <div className="card-footer">
+                  <div className="category">Food</div>
+                  <div className="time">2 minutes</div>
+                </div>
+              </a>
+            );
+          })}
         </SimpleGrid>
       </CSSTransition>
       <button className="view-more-btn">View More</button>
